@@ -1,0 +1,147 @@
+/**
+  下面为覆盖一些组件的样式
+*/
+
+/*面包屑样式覆盖默认值*/
+.el-breadcrumb {
+  margin-top: 40px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+/*覆盖input输入或选择框的样式*/
+.el-input__inner {
+  /*height: 30px !important;*/
+}
+
+/*覆盖button组件的默认样式*/
+.el-button {
+  height: 28px !important;
+  border-radius: 0 !important;
+  padding: 6px 15px !important;
+}
+
+.el-button--primary {
+  background-color: #48ac2e !important;
+  border-color: #48ac2e !important;
+}
+
+.el-button--primary:hover {
+  background-color: #48ac2e!important;
+  border-color: #48ac2e!important;
+}
+
+/*覆盖分页组件的样式*/
+.el-pager li:hover {
+  color: #48ac2e !important; }
+
+.el-pager li.active {
+  background-color: #48ac2e !important;
+  border-color: #48ac2e !important;
+  color: #fff !important;
+}
+
+.el-pagination__sizes .el-input .el-input__inner:hover {
+  border-color: #48ac2e !important;
+}
+
+.el-select-dropdown__item.selected {
+  background-color: #48ac2e !important;
+}
+/*el-card样式*/
+.el-card {
+  border: 0px solid #D3DCE6!important;
+  border-radius: 0px!important;
+  box-shadow:none!important;
+  overflow: visible!important;
+}
+
+/*.el-dialog 样式*/
+.el-dialog--small form{
+  /*width: 480px!important;*/
+  /*overflow: hidden!important;*/
+}
+
+/*table组件样式*/
+/*.el-table__body, .el-table__header{*/
+/*table-layout:auto!important;*/
+/*text-overflow: inherit!important;*/
+/*}*/
+/*.el-table .cell, .el-table th>div{*/
+/*text-overflow: inherit!important;*/
+/*}*/
+
+.el-table .cell, .el-table th>div{
+  padding-right: 3px!important;
+}
+
+/**
+  下面为通用布局样式
+*/
+/*搜索行布局*/
+.search-area {
+  padding-top: 15px;
+}
+
+.search-area .el-input , .search-area .el-select{
+  width: 150px;
+}
+
+.content-area {
+  background: #fff;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.option{
+  color: #20A0FF;
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+#r-setting .el-form-item__label{
+  text-align: left!important;
+}
+/*vue页面内容区域*/
+.content{
+  margin:15px 0 ;
+}
+/*时间选择图片位置调整为居中*/
+.el-date-editor .el-range__icon{
+  line-height: 26px;
+}
+.el-date-editor .el-range-separator{
+  line-height: 26px;
+}
+
+.el-popover{
+  min-width:130px;
+}
+.el-select-dropdown__item.selected{
+  color:#fff;
+}
+/*上传图片的样式修改*/
+.uploadImg_left .el-upload-list{
+  /*margin:-15px 0 0 !important;*/
+}
+.uploadImg_left .el-upload-list--picture .el-upload-list__item{
+  height: 550px ;
+  width: 302px;
+}
+.uploadImg_left a.el-upload-list__item-name{
+  display: none;
+}
+.uploadImg_left .el-upload-list--picture .el-upload-list__item-thumbnail{
+  width: 280px;
+  height: 498px;
+}
+.uploadImg_left .el-upload-list--picture .el-upload-list__item-status-label{
+  z-index: 3;
+}
+.uploadImg_left .el-upload-list__item .el-icon-close{
+  z-index: 3;
+}
+.uploadImg_left .el-upload{
+  height: 540px ;
+  width: 292px;
+  border: 1px solid #000;
+}
